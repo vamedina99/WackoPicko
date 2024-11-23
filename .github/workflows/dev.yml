@@ -8,7 +8,7 @@ jobs:
          - uses: docker://docker.io/fluidattacks/cli:latest
            name: machineStandalone
            with:
-             args: skims scan ./config.yaml
+             args: skims scan ./config/config.yaml
          - run: |
             echo ${{ github.workspace }}
              
