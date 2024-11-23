@@ -8,9 +8,15 @@ jobs:
          - uses: docker://docker.io/fluidattacks/cli:latest
            name: machineStandalone
            with:
-             args: skims scan ./config/config.yaml
-         - run: |
-            echo ${{ github.workspace }}
+             args: skims scan ./config.yaml
+         - name:  artifact
+           if: always()
+           uses: actions/upload-artifact@v3
+           with:
+              name: results
+              path: results.csv
+            
+         
              
 
 
