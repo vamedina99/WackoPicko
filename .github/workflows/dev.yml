@@ -8,7 +8,7 @@ jobs:
          - uses: docker://docker.io/fluidattacks/cli:latest
            name: machineStandalone
            with:
-             args: skims scan --csv skims/test/outputs/test.csv
+             args: skims scan .
              strict: true
              
 
