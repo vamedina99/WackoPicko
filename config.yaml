@@ -4,11 +4,5 @@ output:
   format: CSV
 working_dir: .
 language: EN
-sast:
-  include:
-    - .
-sca:
-  include:
-    - .
 strict: true
 
