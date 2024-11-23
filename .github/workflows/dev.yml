@@ -9,6 +9,8 @@ jobs:
            name: machineStandalone
            with:
              args: skims scan ./config.yaml
+         - run: |
+            echo ${{ github.workspace }}
              
 
 
