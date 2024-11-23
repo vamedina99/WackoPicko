@@ -1,7 +1,0 @@
-namespace: my_app
-working_dir: .
-language: EN
-output:
-  file_path: ./results.csv
-  format: CSV
-strict: true
