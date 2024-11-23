@@ -1,22 +1,14 @@
-namespace: myapp
+namespace: wackopicko
 output:
   file_path: ./Fluid-Attacks-Results.csv
   format: CSV
 working_dir: .
 language: EN
-apk:
-  include:
-    - glob(**/*.apk)
 sast:
   include:
     - .
-  exclude:
-    - glob(**/node_modules/**)
-    - glob(**/test/**)
 sca:
   include:
     - .
-  exclude:
-    - glob(**/test/**)
 strict: true
 
